@@ -290,8 +290,9 @@ services:
       opencti:
         condition: service_healthy
 
-  # Importation de connecteur external import (https://github.com/OpenCTI-Platform/connectors/tree/master/external-import)
+# Importation de connecteur external import (https://github.com/OpenCTI-Platform/connectors/tree/master/external-import)
 
+## Connectors External
   connector-alienvault:
     image: opencti/connector-alienvault:rolling
     environment:
@@ -429,6 +430,7 @@ services:
       opencti:
         condition: service_healthy
 
+## Connectors Internal Enrichment
   connector-shodan-internetdb:
     image: opencti/connector-shodan-internetdb:rolling
     environment:
